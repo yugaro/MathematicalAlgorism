@@ -13,7 +13,7 @@ using P = pair<int, int>;
 const int mod = 1000000007;
 struct mint
 {
-    ll x; // typedef long long ll;
+    ll x; 
     mint(ll x = 0) : x((x % mod + mod) % mod) {}
     mint operator-() const { return mint(-x); }
     mint &operator+=(const mint a)

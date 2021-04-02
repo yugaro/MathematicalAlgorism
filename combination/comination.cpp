@@ -10,10 +10,11 @@ using P = pair<int, int>;
 #define mp make_pair
 #define INF 1e9
 
+// define modeint 
 const int mod = 1000000007;
 struct mint
 {
-    ll x; // typedef long long ll;
+    ll x;
     mint(ll x = 0) : x((x % mod + mod) % mod) {}
     mint operator-() const { return mint(-x); }
     mint &operator+=(const mint a)
@@ -55,6 +56,7 @@ struct mint
 istream &operator>>(istream &is, mint &a) { return is >> a.x; }
 ostream &operator<<(ostream &os, const mint &a) { return os << a.x; }
 
+// create a funcition of combination of modeint
 struct combination
 {
     vector<mint> fact, ifact;
